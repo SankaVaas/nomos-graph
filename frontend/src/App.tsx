@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef } from "react";
 import axios from "axios";
 
-const API = "http://localhost:8080";
-const WS = "ws://localhost:8080/ws";
+const API = "http://localhost:8000";
+const WS = "ws://localhost:8000/ws";
 
 type Task = {
   task: string;

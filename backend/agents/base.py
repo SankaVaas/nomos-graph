@@ -4,7 +4,7 @@ from datetime import datetime
 
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
-MODEL = "mistralai/mistral-7b-instruct-v0.2"
+MODEL = "qwen/qwen3-235b-a22b-2507"
 
 async def call_llm(system_prompt: str, user_message: str) -> str:
     async with httpx.AsyncClient(timeout=30) as client:
